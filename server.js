@@ -14,8 +14,8 @@ app.use(morgan('tiny'));
 
 
 // routers
-// app.use('/user', userRouter);
-// app.use('/order', orderRouter);
+app.use('/user', userRouter);
+app.use('/order', orderRouter);
 
 console.log(process.env.API_KEY);
 if(app.get('env') === 'development'){
