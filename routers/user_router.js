@@ -1,5 +1,5 @@
 const express = require('express');
-const { getUser } = require('../controllers/user.controller');
+const { getUser } = require('../controllers/user_controller');
 const router = express.Router();
 
 // only execute for requests related to routes in this file
