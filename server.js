@@ -1,7 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
-const userRouter = require('./routers/user.router');
-const orderRouter = require('./routers/order.router');
+//const userRouter = require('./routers/user.router');
+//const orderRouter = require('./routers/order.router');
 const { notFound, errHandler } = require('./middlewares/errorHandlers');
 
 require("dotenv").config();
@@ -14,8 +14,8 @@ app.use(morgan('tiny'));
 
 
 // routers
-app.use('/user', userRouter);
-app.use('/order', orderRouter);
+// app.use('/user', userRouter);
+// app.use('/order', orderRouter);
 
 console.log(process.env.API_KEY);
 if(app.get('env') === 'development'){
