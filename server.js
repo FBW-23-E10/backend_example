@@ -1,8 +1,8 @@
 const express = require('express');
 const morgan = require('morgan');
 require("dotenv").config();
-const userRouter = require('./routers/user.router');
-const orderRouter = require('./Routers/order.router');
+const userRouter = require('./routers/user.router.js');
+const orderRouter = require('./Routers/order.router.js');
 const { notFound, errHandler } = require('./middlewares/errorHandlers');
 
 const app = express();
