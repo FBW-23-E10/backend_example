@@ -6,7 +6,8 @@ const router = express.Router();
 // router.use(()=>{console.log('middleware for user router')})
 
 // path is /user/
-router.route('/')
+
+router.route('/:uid')
     .get(getUser)
     .post()
     .put()
